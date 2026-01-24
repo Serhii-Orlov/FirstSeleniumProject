@@ -95,9 +95,33 @@ public class HomeWork1 {
 
         WebElement headerLogo = driver.findElement(By.cssSelector(".header-logo"));
         System.out.println(headerLogo.getTagName());
-
     }
 
+    @Test
+    public void findElementByXpath() {
+        WebElement h2 = driver.findElement(By.xpath("//h2"));
+        System.out.println(h2.getText());
 
+        WebElement h3 = driver.findElement(By.xpath("//h3"));
+        System.out.println(h3.getText());
 
+        WebElement strong = driver.findElement(By.xpath("//strong[text()='Categories']"));
+        System.out.println(strong.getText());
+
+        WebElement label = driver.findElement(By.xpath("//label[@for='pollanswers-1']"));
+        System.out.println(label.getText());
+
+        driver.findElement(By.xpath("//input[@id='small-searchterms']"));
+        driver.findElement(By.xpath("//div[@class='bar-notification']"));
+
+        WebElement footer = driver.findElement(By.xpath("//div[@class='footer-disclaimer']"));
+        System.out.println(footer.getText());
+
+        driver.findElement(By.xpath("//li[@class='facebook']"));
+
+        WebElement icoLogin = driver.findElement(By.xpath("//a[@class='ico-login']"));
+        System.out.println(icoLogin.getText());
+
+        driver.findElement(By.xpath("//div[@class='header-logo']"));
+    }
 }
