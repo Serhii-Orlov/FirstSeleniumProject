@@ -68,6 +68,36 @@ public class HomeWork1 {
         System.out.println(headerLogo.getTagName());
     }
 
+    @Test
+    public void findElementByCssSelector() {
+        WebElement h2 = driver.findElement(By.cssSelector("h2"));
+        System.out.println(h2.getText());
+
+        WebElement h3 = driver.findElement(By.cssSelector("h3"));
+        System.out.println(h3.getText());
+
+        WebElement strong = driver.findElement(By.cssSelector("strong"));
+        System.out.println(strong.getText());
+
+        WebElement label = driver.findElement(By.cssSelector("label"));
+        System.out.println(label.getText());
+
+        driver.findElement(By.cssSelector("input[id=small-searchterms]"));
+        driver.findElement(By.cssSelector(".bar-notification"));
+
+        WebElement footer = driver.findElement(By.cssSelector(".footer-disclaimer"));
+        System.out.println(footer.getText());
+
+        driver.findElement(By.cssSelector("li.facebook"));
+
+        WebElement icoLogin = driver.findElement(By.cssSelector(".ico-login"));
+        System.out.println(icoLogin.getText());
+
+        WebElement headerLogo = driver.findElement(By.cssSelector(".header-logo"));
+        System.out.println(headerLogo.getTagName());
+
+    }
+
 
 
 }
